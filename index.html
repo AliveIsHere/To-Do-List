@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/app.css">
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold text-center mb-4">To-Do List</h1>
+        <form id="task-form" class="flex justify-center mb-4">
+            <input type="text" id="task-input" class="w-full p-2 rounded-lg shadow-lg">
+            <button type="submit" class="p-2 rounded-full bg-blue-500 text-white">Add</button>
+        </form>
+        <ul id="task-list" class="mx-auto w-1/2"></ul>
+    </div>
+    <script src="/src/js/app.js"></script>
+</body>
 </html>
